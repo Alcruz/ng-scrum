@@ -1,17 +1,17 @@
 import {Component} from 'angular2/core';
 import {Router} from 'angular2/router';
 
-import {AuthService} from './auth.service';
+import {SignInService} from './signin.service';
 import {AppSession} from '../common/app-session.service'
 
 @Component({
-    templateUrl: 'app/auth/signin.component.html',
+    templateUrl: 'app/signin/signin.component.html',
     selector: 'signin-form',
-    providers: [AuthService]
+    providers: [SignInService]
 })
 export class SignInComponent {
     constructor(private _router: Router, 
-                private _authService: AuthService,
+                private _authService: SignInService,
                 private _appSession: AppSession){
     }
     

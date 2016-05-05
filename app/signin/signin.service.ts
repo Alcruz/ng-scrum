@@ -4,10 +4,10 @@ import {Headers, Http, RequestOptions} from 'angular2/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-import {User, AuthToken} from './auth.models';
+import {User, AuthToken} from './signin.models';
 
 @Injectable()
-export class AuthService {
+export class SignInService {
     private _url = 'http://127.0.0.1:8000/api/token/';
   
     constructor(private _http: Http) { 

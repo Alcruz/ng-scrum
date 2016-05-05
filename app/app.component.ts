@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig} from 'angular2/router';
 
-import {SignInComponent} from './auth/signin.component';
+import {SignInComponent} from './signin/signin.component';
 import {SignedInRouterOutlet} from './common/auth.directive';
 import {ProjectsComponent} from './projects/projects.component';
 
