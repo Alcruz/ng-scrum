@@ -16,7 +16,6 @@ export class AuthService {
     signIn(user: User): Observable<AuthToken> {
         let headers = new Headers({'Content-Type': 'application/json'});
         let requestOptions = new RequestOptions({headers: headers});
-        
         let userJson = JSON.stringify(user);
         
         return this._http.post(this._url, userJson, requestOptions)

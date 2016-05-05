@@ -15,22 +15,25 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active">
-            <a href="#">Dashboard<span class="sr-only">(current)</span></a>
+            <a href="projects">Dashboard<span class="sr-only">(current)</span></a>
         </li>
-        <li><a href="#">Sprints</a></li>
-        <li><a href="#">Task</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a 
+          href="#" 
+          class="dropdown-toggle" 
+          data-toggle="dropdown" 
+          role="button" 
+          aria-haspopup="true" 
+          aria-expanded="false">
+            Sprints<span class="caret"></span>
+          </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="projects/spritns/current">Current</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="projects/sprints/create">Create</a></li>
           </ul>
         </li>
+        <li><a href="#">Task</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -48,6 +51,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container">
-    <router-outlet></router-outlet>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
 </div>
